@@ -1,0 +1,239 @@
+{
+  "holdout_period": "2026-04-01 .. 2026-06-30",
+  "n_holdout": 2126,
+  "base_rate": 0.11523988711194733,
+  "auc": 0.7861515260011501,
+  "auc_95ci": [
+    0.7534539692278054,
+    0.8136107378086386
+  ],
+  "pr_auc": 0.40878230090106554,
+  "accuracy_if_flag_nobody": 0.8847601128880527,
+  "accuracy_at_0.5": 0.8932267168391346,
+  "max_accuracy_any_threshold": 0.8951081843838193,
+  "calibration_deciles": [
+    {
+      "d": 0,
+      "n": 213,
+      "predicted": 0.013698043648696819,
+      "actual": 0.014084507042253521
+    },
+    {
+      "d": 1,
+      "n": 213,
+      "predicted": 0.024292526324219573,
+      "actual": 0.028169014084507043
+    },
+    {
+      "d": 2,
+      "n": 212,
+      "predicted": 0.03573265039277024,
+      "actual": 0.0330188679245283
+    },
+    {
+      "d": 3,
+      "n": 213,
+      "predicted": 0.046797410226914506,
+      "actual": 0.028169014084507043
+    },
+    {
+      "d": 4,
+      "n": 212,
+      "predicted": 0.059878070153099205,
+      "actual": 0.09433962264150944
+    },
+    {
+      "d": 5,
+      "n": 213,
+      "predicted": 0.076968054591259,
+      "actual": 0.07981220657276995
+    },
+    {
+      "d": 6,
+      "n": 212,
+      "predicted": 0.1000149756704112,
+      "actual": 0.10849056603773585
+    },
+    {
+      "d": 7,
+      "n": 213,
+      "predicted": 0.13452989066020746,
+      "actual": 0.12206572769953052
+    },
+    {
+      "d": 8,
+      "n": 212,
+      "predicted": 0.20108471515238283,
+      "actual": 0.2358490566037736
+    },
+    {
+      "d": 9,
+      "n": 213,
+      "predicted": 0.4243049550075087,
+      "actual": 0.4084507042253521
+    }
+  ],
+  "auc_shield": 0.7635069817400645,
+  "auc_non_shield": 0.7655621875665657,
+  "rupees": {
+    "n_orders": 2126,
+    "actual_returns": 245,
+    "cost_of_returns_inr": 281750,
+    "call_threshold": 0.1118,
+    "strategies": {
+      "hold_flagged_p>=0.5 (Ritu's plan)": {
+        "orders_touched": 46,
+        "true_returns_caught": 32,
+        "false_alarms": 14,
+        "good_orders_cancelled": 1.7,
+        "returns_avoided": 3.8,
+        "net_inr": -23.0,
+        "net_inr_per_1000_orders": -11.0
+      },
+      "hold_top10pct": {
+        "orders_touched": 213,
+        "true_returns_caught": 87,
+        "false_alarms": 126,
+        "good_orders_cancelled": 15.1,
+        "returns_avoided": 10.4,
+        "net_inr": -28479.0,
+        "net_inr_per_1000_orders": -13396.0
+      },
+      "call_top10pct": {
+        "orders_touched": 213,
+        "true_returns_caught": 87,
+        "false_alarms": 126,
+        "returns_avoided": 30.4,
+        "call_spend_inr": 9585,
+        "net_inr": 25432.0,
+        "net_inr_per_1000_orders": 11962.0
+      },
+      "call_top20pct": {
+        "orders_touched": 426,
+        "true_returns_caught": 137,
+        "false_alarms": 289,
+        "returns_avoided": 47.9,
+        "call_spend_inr": 19170,
+        "net_inr": 35972.0,
+        "net_inr_per_1000_orders": 16920.0
+      },
+      "call_above_breakeven (recommended)": {
+        "orders_touched": 653,
+        "true_returns_caught": 165,
+        "false_alarms": 488,
+        "returns_avoided": 57.7,
+        "call_spend_inr": 29385,
+        "net_inr": 37027.0,
+        "net_inr_per_1000_orders": 17416.0
+      },
+      "call_above_breakeven_nonShield_only": {
+        "orders_touched": 381,
+        "true_returns_caught": 80,
+        "false_alarms": 301,
+        "returns_avoided": 28.0,
+        "call_spend_inr": 17145,
+        "net_inr": 15055.0,
+        "net_inr_per_1000_orders": 7081.0
+      },
+      "call_everyone": {
+        "orders_touched": 2126,
+        "true_returns_caught": 245,
+        "false_alarms": 1881,
+        "returns_avoided": 85.8,
+        "call_spend_inr": 95670,
+        "net_inr": 2942.0,
+        "net_inr_per_1000_orders": 1384.0
+      }
+    }
+  },
+  "costs_used": {
+    "return_cost": 1150,
+    "call_cost": 45,
+    "call_prevents": 0.35,
+    "hold_cancel_rate": 0.12,
+    "assumed_margin_pct": 0.2
+  },
+  "worst_false_negatives": [
+    {
+      "order_id": "KO2609858",
+      "sku": "KH-MG-03",
+      "payment_mode": "emi",
+      "customer_prior_returns": 0,
+      "score": 0.016705533946482422
+    },
+    {
+      "order_id": "KO2608658",
+      "sku": "KH-CF-02",
+      "payment_mode": "emi",
+      "customer_prior_returns": 0,
+      "score": 0.018016426602340048
+    },
+    {
+      "order_id": "KO2610306",
+      "sku": "KH-MG-01",
+      "payment_mode": "cod",
+      "customer_prior_returns": 0,
+      "score": 0.01889747712614072
+    },
+    {
+      "order_id": "KO2608515",
+      "sku": "KH-RH-02",
+      "payment_mode": "prepaid_upi",
+      "customer_prior_returns": 0,
+      "score": 0.02137936062189599
+    },
+    {
+      "order_id": "KO2609041",
+      "sku": "KH-WP-03",
+      "payment_mode": "prepaid_upi",
+      "customer_prior_returns": 0,
+      "score": 0.02243381397876585
+    }
+  ],
+  "worst_false_positives": [
+    {
+      "order_id": "KO2609532",
+      "sku": "KH-RV-03",
+      "payment_mode": "cod",
+      "customer_prior_returns": 2,
+      "score": 0.7723064351814072
+    },
+    {
+      "order_id": "KO2609200",
+      "sku": "KH-AF-01",
+      "payment_mode": "prepaid_upi",
+      "customer_prior_returns": 4,
+      "score": 0.759278967345983
+    },
+    {
+      "order_id": "KO2608725",
+      "sku": "KH-WP-03",
+      "payment_mode": "cod",
+      "customer_prior_returns": 1,
+      "score": 0.6692224598197823
+    },
+    {
+      "order_id": "KO2610373",
+      "sku": "KH-RV-02",
+      "payment_mode": "cod",
+      "customer_prior_returns": 1,
+      "score": 0.6253753636705511
+    },
+    {
+      "order_id": "KO2609068",
+      "sku": "KH-AF-01",
+      "payment_mode": "cod",
+      "customer_prior_returns": 0,
+      "score": 0.6058906298721587
+    }
+  ],
+  "test_scoring": {
+    "n": 2096,
+    "mean_score": 0.115330713228437,
+    "expected_returns": 241.73317492680397,
+    "actions": {
+      "ship_normally": 1419,
+      "call_before_dispatch": 677
+    }
+  }
+}

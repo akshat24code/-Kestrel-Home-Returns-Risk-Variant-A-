@@ -1,0 +1,9 @@
+# Customer and order data stay out of the repo (ops-policy §10). Copy the pack into data/ to retrain.
+data/*.csv
+!data/products.csv
+data/*.pdf
+data/*.txt
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/

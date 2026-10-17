@@ -1,0 +1,20 @@
+[
+  {"label": "Low risk - prepaid fan, loyal customer",
+   "order_id": "DEMO-001", "order_placed_at": "2026-07-03 11:20", "customer_id": "DEMO-C1", "sku": "KH-CF-02",
+   "sales_channel": "app", "payment_mode": "prepaid_upi", "discount_pct": 5, "qty": 1, "order_value_inr": 3324.05,
+   "promised_delivery_days": 3, "delivery_pincode": "411038", "is_gift": "N", "customer_prior_orders": 3,
+   "customer_prior_returns": 0, "delivery_note": "Leave with security",
+   "shield_member": "N", "signup_date": "2024-02-11", "state": "MH"},
+  {"label": "Elevated - COD air fryer on marketplace",
+   "order_id": "DEMO-002", "order_placed_at": "2026-07-04 21:05", "customer_id": "DEMO-C2", "sku": "KH-AF-02",
+   "sales_channel": "marketplace", "payment_mode": "cod", "discount_pct": 15, "qty": 1, "order_value_inr": 5524.15,
+   "promised_delivery_days": 7, "delivery_pincode": "560034", "is_gift": "N", "customer_prior_orders": 1,
+   "customer_prior_returns": 0, "delivery_note": "Call before delivery",
+   "shield_member": "N", "signup_date": "2025-12-01", "state": "KA"},
+  {"label": "High risk - Shield member, past returns, robot vacuum",
+   "order_id": "DEMO-003", "order_placed_at": "2026-07-05 14:40", "customer_id": "DEMO-C3", "sku": "KH-RV-03",
+   "sales_channel": "web", "payment_mode": "cod", "discount_pct": 20, "qty": 1, "order_value_inr": 23758.4,
+   "promised_delivery_days": 9, "delivery_pincode": "600017", "is_gift": "Y", "customer_prior_orders": 4,
+   "customer_prior_returns": 2, "delivery_note": "",
+   "shield_member": "Y", "signup_date": "2023-08-19", "state": "TN"}
+]

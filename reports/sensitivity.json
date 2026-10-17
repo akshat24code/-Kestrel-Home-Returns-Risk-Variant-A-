@@ -1,0 +1,66 @@
+[
+  {
+    "return_cost": 600,
+    "call_prevents": 0.15,
+    "threshold": 0.5,
+    "share_called": 0.022,
+    "net_per_1000_orders": 381,
+    "net_if_call_everyone_per_1000": -34628
+  },
+  {
+    "return_cost": 600,
+    "call_prevents": 0.25,
+    "threshold": 0.3,
+    "share_called": 0.079,
+    "net_per_1000_orders": 1736,
+    "net_if_call_everyone_per_1000": -27714
+  },
+  {
+    "return_cost": 600,
+    "call_prevents": 0.35,
+    "threshold": 0.214,
+    "share_called": 0.134,
+    "net_per_1000_orders": 4262,
+    "net_if_call_everyone_per_1000": -20800
+  },
+  {
+    "return_cost": 600,
+    "call_prevents": 0.5,
+    "threshold": 0.15,
+    "share_called": 0.217,
+    "net_per_1000_orders": 10139,
+    "net_if_call_everyone_per_1000": -10428
+  },
+  {
+    "return_cost": 1150,
+    "call_prevents": 0.15,
+    "threshold": 0.261,
+    "share_called": 0.103,
+    "net_per_1000_orders": 2586,
+    "net_if_call_everyone_per_1000": -25121
+  },
+  {
+    "return_cost": 1150,
+    "call_prevents": 0.25,
+    "threshold": 0.157,
+    "share_called": 0.205,
+    "net_per_1000_orders": 9568,
+    "net_if_call_everyone_per_1000": -11869
+  },
+  {
+    "return_cost": 1150,
+    "call_prevents": 0.35,
+    "threshold": 0.112,
+    "share_called": 0.307,
+    "net_per_1000_orders": 17417,
+    "net_if_call_everyone_per_1000": 1384
+  },
+  {
+    "return_cost": 1150,
+    "call_prevents": 0.5,
+    "threshold": 0.078,
+    "share_called": 0.443,
+    "net_per_1000_orders": 32801,
+    "net_if_call_everyone_per_1000": 21263
+  }
+]
